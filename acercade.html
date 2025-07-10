@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NutriFuerza</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img
+          src="imagenes/logo.png"
+          alt="NutriFuerza"
+          class="logo-navbar mr-2"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#mapa">Ubicación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acercade.html">Acerca de</a>
+          </li>
+        </ul>
+        <button id="modo-toggle" class="btn btn-outline-light">
+          🌙 Modo oscuro
+        </button>
+      </div>
+    </nav>
+    <header>
+      <div
+        class="cover cover-acercade d-flex justify-content-center align-items-start p-5 flex-column"
+      >
+        <h1>NutriFuerza</h1>
+        <p>Energía para tu estilo de vida activo</p>
+        <button class="btn btn-primary" onclick="scrollToSection('stripe')">
+          Conocé más
+        </button>
+      </div>
+    </header>
+    <section>
+      <div class="container mt-5 mb-5">
+        <img
+          src="imagenes/bowl.jpg"
+          alt="Bowl de doritos con palta - ahuacate"
+          height="250"
+          class="rounded-img float-right ml-4"
+        />
+        <p>
+          En NutriFuerza creemos que una alimentación saludable es la base de
+          una vida activa y equilibrada. Por eso creamos un espacio donde la
+          comida no solo nutre, sino también inspira. Combinamos ingredientes
+          frescos con recetas prácticas y deliciosas para ofrecer viandas listas
+          para disfrutar en casa, en la oficina o donde vos estés. Nuestro
+          equipo está formado por profesionales apasionados por el bienestar y
+          la nutrición, que trabajan todos los días para acercarte platos ricos,
+          balanceados y sostenibles. Apostamos a lo local, a lo natural, y a que
+          cada comida sea una oportunidad para sentirte mejor.
+        </p>
+        <p>
+          Creemos que comer bien no debería ser complicado. Por eso, en
+          NutriFuerza te ayudamos a incorporar hábitos saludables sin renunciar
+          al sabor ni al placer de una buena comida. Con opciones pensadas para
+          todos los gustos y estilos de vida, te acompañamos en tu camino hacia
+          una alimentación más consciente, práctica y deliciosa.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="container mt-5 mb-5">
+        <h2 class="text-center mb-4">Cocina saludable</h2>
+        <div class="carousel-stripe">
+          <div
+            class="carousel-image"
+            style="background-image: url(imagenes/cocina-2.png)"
+          ></div>
+          <div
+            class="carousel-image"
+            style="background-image: url(imagenes/cocina-3.png)"
+          ></div>
+          <div
+            class="carousel-image"
+            style="background-image: url(imagenes/cocina-4.png)"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-5 mb-5">
+      <h2 class="text-center mb-4">Conoce al equipo</h2>
+      <div
+        class="d-flex justify-content-center overflow-auto avatar-carousel px-3"
+      >
+        <div class="card avatar-card text-center mx-2">
+          <div class="avatar-wrapper">
+            <div
+              class="avatar"
+              style="background-image: url(imagenes/avatar-1.jpg)"
+            ></div>
+          </div>
+          <h4>Ruben</h4>
+          <span class="badge badge-primary">CEO</span>
+        </div>
+        <div class="card avatar-card text-center mx-2">
+          <div class="avatar-wrapper">
+            <div
+              class="avatar"
+              style="background-image: url(imagenes/avatar-2.jpg)"
+            ></div>
+          </div>
+          <h4>Raul</h4>
+          <span class="badge badge-primary">COCINERO</span>
+        </div>
+        <div class="card avatar-card text-center mx-2">
+          <div class="avatar-wrapper">
+            <div
+              class="avatar"
+              style="background-image: url(imagenes/avatar-3.jpg)"
+            ></div>
+          </div>
+          <h4>Luz</h4>
+          <span class="badge badge-primary">CFO</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-bar">
+      <p>&copy; 2025 NutriFuerza | Todos los derechos reservados</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
